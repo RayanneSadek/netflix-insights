@@ -1,93 +1,90 @@
-📊 Analyse Exploratoire du Catalogue Netflix
-🧠 Projet réalisé par :
-Perla
+# 📊 Analyse Exploratoire du Catalogue Netflix
 
-Rayanne
+## 👥 Auteurs
+- **Perla**
+- **Rayanne**
+- **Zakaria**
 
-Zakaria
+---
 
-🎯 Objectif du projet
-Ce projet a pour but de réaliser une analyse exploratoire du catalogue Netflix à partir d’un dataset contenant les informations des films et séries disponibles sur la plateforme.
-Notre mission est de mieux comprendre les tendances, identifier les contenus dominants, repérer les manques éventuels, et proposer une stratégie de contenu pour 2026.
+## 🎯 Objectif du Projet
+Analyser le catalogue de Netflix pour :
+- Comprendre les tendances par type, durée, pays, genre, année.
+- Nettoyer et structurer les données.
+- Proposer des prévisions stratégiques pour l’année 2026.
 
-📁 Données utilisées
-Le dataset netflix_titles.csv contient les colonnes suivantes :
+---
 
-title, type, country, release_year, date_added, rating, duration, listed_in, director, etc.
+## 📁 Données Utilisées
+**Fichier :** `netflix_titles.csv`  
+Contient les colonnes principales :
+- `title`, `type`, `country`, `release_year`, `date_added`, `rating`, `duration`, `listed_in`, `director`, etc.
 
-🛠️ Étapes de l’analyse
-1. Chargement et aperçu des données
-Chargement du fichier CSV avec pandas.
+---
 
-Affichage des 5 premières et 5 dernières lignes.
+## 🛠️ Étapes de l’Analyse
 
-Informations générales (info, shape, columns, dtypes).
+### 1. Chargement et Exploration Initiale
+- Importation du fichier CSV avec `pandas`
+- Aperçu des 5 premières et dernières lignes
+- Affichage des infos globales du DataFrame (`info()`, `shape`, `columns`)
+- Types de données (numériques, catégorielles)
+- Valeurs manquantes
+- Observation aléatoire
 
-Observation des types de données (numériques, catégorielles).
+### 2. Nettoyage et Préparation des Données
+- Conversion de `date_added` en `datetime`
+- Extraction des durées (`duration`) en format numérique pour films et séries
+- Transformation de `listed_in` en liste de genres
+- Analyse des valeurs uniques (`type`, `country`, `release_year`, `rating`, etc.)
 
-Recherche des valeurs manquantes et affichage d’une ligne aléatoire.
+### 3. Requêtes Ciblées
+- Informations sur “Catch Me If You Can”
+- Film et série les plus récents
+- Réalisateurs ayant plusieurs œuvres
+- Années avec le plus d’ajouts de films/séries
 
-2. Nettoyage et transformation des données
-Conversion de date_added au format datetime.
+### 4. Visualisations Graphiques
+- Répartition des types d’œuvres
+- Répartition par pays
+- Répartition par années
+- Répartition des ratings
+- Durée des films et séries
+- Genres d’œuvres les plus fréquents
+- Top 5 des films et séries les plus longs
+- Réalisateurs français et œuvres françaises
+- Histogramme des dates d’ajout
 
-Transformation de duration en valeur numérique pour les films et séries.
+### 5. Analyse et Prévisions 2026
+- Prévision 1 : Le format court va dominer
+- Prévision 2 : Les séries surpasseront les films
+- Prévision 3 : Accent sur crime, thriller, documentaire
+- Prévision 4 : Moins d’ajouts, mais meilleure qualité
+- Prévision 5 : La France est un marché clé à développer
+- Prévision 6 : Miser sur les réalisateurs récurrents
 
-Conversion de listed_in en liste de genres.
+---
 
-Vérification de l’unicité des valeurs dans type, country, release_year, rating, etc.
+## 🔧 Technologies Utilisées
+- **Python**
+- **Pandas**
+- **Matplotlib**
+- **Seaborn**
+- **Jupyter Notebook**
 
-3. Requêtes spécifiques
-Récupération de l’œuvre “Catch Me If You Can”.
+---
 
-Identification du film et de la série les plus récents.
+## ✅ Résultats Attendus
+- Une base de données propre et analysable
+- Une visualisation claire des tendances Netflix
+- Des recommandations stratégiques pour l’avenir de la plateforme
 
-Détection des réalisateurs récurrents.
+---
 
-Année avec le plus de films / séries ajoutés.
+## 🙌 Remerciements
+Projet réalisé par :
+- **Perla**
+- **Rayanne**
+- **Zakaria**
 
-4. Visualisations (Matplotlib & Seaborn)
-Répartition des types (Movie vs TV Show)
-
-Répartition par pays, années, rating, genres
-
-Durées des films et séries
-
-Top 5 des films/séries les plus longs
-
-Répartition des œuvres françaises et des réalisateurs français
-
-Histogramme des dates d’ajout
-
-5. Analyse et prévisions
-Sur la base des données nettoyées et visualisées, nous avons proposé 6 grandes prévisions stratégiques pour Netflix en 2026 :
-
-Le format court va dominer.
-
-Les séries vont dépasser les films en volume et impact.
-
-Les genres crime, thriller, documentaire sont à pousser.
-
-Moins d’ajouts, mais une meilleure qualité éditoriale.
-
-La France est un marché à valoriser davantage.
-
-Miser sur les réalisateurs réguliers pour fidéliser.
-
-📌 Outils utilisés
-Python
-
-Pandas
-
-Matplotlib / Seaborn
-
-Jupyter Notebook
-
-✅ Résultat attendu
-Une vision claire et stratégique de l’offre Netflix actuelle, des tendances par genre, durée, pays, et année… le tout afin de permettre à la direction de Netflix de prendre des décisions basées sur les données.
-
-🔚 Remerciements
-Projet réalisé avec rigueur et créativité par :
-
-Perla, Rayanne, et Zakaria
-Étudiants passionnés par la data, les tendances culturelles, et la stratégie numérique.
-
+Étudiants passionnés de data, culture numérique et innovation.
